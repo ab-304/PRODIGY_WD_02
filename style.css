@@ -1,13 +1,16 @@
 body {
-    text-align: center; 
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin-top: 100px;
+    background: linear-gradient(to right, #4a502c, #4caf78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
 #display {
-    font-size: 48px; 
+    font-size: 40px;
     margin-bottom: 20px;
+    color: #2c3e50;
 }
 
 .buttons {
@@ -15,18 +18,28 @@ body {
 }
 
 button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #2c3e50;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #1a252f; 
+    background-color: #1a252f;
+    transform: scale(1.05);
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 #laps {
@@ -35,9 +48,8 @@ button:hover {
 }
 
 #laps li {
-    background: white;
-    margin: 5px auto;
-    padding: 10px;
-    width: 200px;
+    background: #f1f1f1;
+    margin: 5px 0;
+    padding: 8px;
     border-radius: 5px;
 }
